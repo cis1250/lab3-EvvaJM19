@@ -14,13 +14,12 @@ unique_words = []
 frequencies = []
 
 for word in words:
-    # Remove punctuation by checking each character
     normalized = ""
     for char in word:
         if char != '.' and char != ',' and char != '!' and char != '?' and char != ':' and char != ';':
             normalized = normalized + char.lower()
     if normalized == "":
-        continue  # skip empty results
+        continue  
     if normalized in unique_words:
         index = unique_words.index(normalized)
         frequencies[index] = frequencies[index] + 1
