@@ -8,4 +8,19 @@
 
 def fibonacci_sequence():
   while true:
-    user_input = input("how many 
+    user_input = input("how many terms of the fibonacci sequence do you want")
+    if user_input.isdigit() and int(user_input)>0:
+      n = int(user_input)
+      break
+    else:
+      print("Please enter a positive integer")
+
+
+a = 0
+b = 1
+for_in range(n):
+print(a, end=" ")
+a = b
+b = a + b
+print()
+
