@@ -7,9 +7,10 @@
 # Use a for loop to print the Fibonacci sequence up to that many terms.
 
 def fibonacci_sequence():
-  while true:
+  while True:
     user_input = input("how many terms of the fibonacci sequence do you want")
     if user_input.isdigit() and int(user_input)>0:
+      n = none 
       n = int(user_input)
       break
     else:
@@ -18,9 +19,9 @@ def fibonacci_sequence():
 
 a = 0
 b = 1
-for_in range(n):
-print(a, end=" ")
-a = b
-b = a + b
+i in range(n):
+  print(a, end=" ")
+  a = b
+  b = a + b
 print()
 
